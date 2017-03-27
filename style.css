@@ -21,12 +21,24 @@ ul.facts > li {
   margin-left: 20px;
 }
 
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+
+input[type=text]:focus:not([readonly]){
+  border-bottom: 1px solid #0594f6;
+}
+
 .btn {
   background-color: #006bb7;
 }
 
 .btn:hover {
   background-color: #0594f6;
+}
+
+label#marketingText {
+  color: #000;
 }
 
 footer > ul > li {

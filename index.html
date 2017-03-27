@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <script src="js/app.js" charset="utf-8"></script>
 
-  </script>
+</script>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
       </div>
     </header>
     <div class="row">
-      <div class="col s12 m6 l6">
+      <div class="col s12 m6 l6 left">
         <h4>Business finance. Simplified.</h4>
         <p>iwoca is the fast, flexible new way to finance your small business:</p>
         <ul class="facts">
@@ -38,36 +38,38 @@
         </ul>
         <p>Leave your details and we’ll call you back to talk to you about how iwoca could work for your business</p>
       </div>
-      <div class="col s12 m6 l6">
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="fullName" type="text" class="validate" required>
-            <label for="fullName">Name</label>
+      <div class="col s12 m6 l6 right">
+        <form id="callbackDetails" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="fullName" type="text" class="validate" required>
+              <label for="fullName">Name</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="phoneNumber" type="text" class="validate" required>
-            <label for="phoneNumber">Phone Number</label>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="phoneNumber" type="text" class="validate" required>
+              <label for="phoneNumber">Phone Number</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="email" type="text" class="validate">
-            <label for="email">Email Address</label>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="text" class="validate">
+              <label for="email">Email Address</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <p>
-            <input type="checkbox" id="marketing" />
-            <label for="marketing">I am happy to receive iwoca marketing emails</label>
-          </p>
-        </div>
-        <div class="row">
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
+          <div class="row">
+            <p>
+              <input type="checkbox" id="marketing" />
+              <label for="marketing" id="marketingText">I am happy to receive iwoca marketing emails</label>
+            </p>
+          </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light" type="submit">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <footer>
