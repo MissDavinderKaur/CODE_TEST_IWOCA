@@ -21,6 +21,14 @@ ul.facts > li {
   margin-left: 20px;
 }
 
+.btn {
+  background-color: #006bb7;
+}
+
+.btn:hover {
+  background-color: #0594f6;
+}
+
 footer > ul > li {
   display: inline-block;
   margin: 10px;
