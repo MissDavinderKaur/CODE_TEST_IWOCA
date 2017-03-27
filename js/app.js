@@ -2,9 +2,12 @@ const $ = window.$;
 let submitted = false;
 
 function start() {
+  $('#loginLink').on('click', login);
+  $('#modal1').modal();
+
   $('#callbackDetails').on('submit', submit);
+
   $('body').on('click', '#gotIt', gotIt);
-  console.log('Value of submitted on page load', submitted);
 }
 
 function submit(e) {
@@ -13,7 +16,6 @@ function submit(e) {
   const phone = $('#phoneNumber').val();
 
   submitted = true;
-  console.log('Once the form has been submitted, the value of submitted is', submitted);
 
   if(submitted) {
     $('form').remove();
@@ -24,6 +26,11 @@ function submit(e) {
 
 function gotIt() {
   location.reload();
+}
+
+function login() {
+  console.log('CLICKED');
+  $('#loginModal').modal('open');
 }
 
 $(start);

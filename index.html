@@ -22,7 +22,7 @@
         <img src="images/iwoca_with_tagline.png" id="logo" alt="iwoca logo">
 
         <div id="login">
-          <a href="#">Login</a>
+          <a class="waves-effect waves-light btn" href="#modal1" id="loginLink">Log In</a>
         </div>
       </div>
     </header>
@@ -80,6 +80,38 @@
         <li><a href="https://www.iwoca.co.uk/terms_of_use/">Privacy</a> </li>
       </ul>
     </footer>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="loginEmail" type="text" class="validate" required>
+            <label for="loginEmail">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="loginPassword" type="text" class="validate" required>
+            <label for="loginPassword">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn waves-effect waves-light" type="submit" id="logIn">Log in
+          </button>
+        </div>
+
+        <div class="modal-footer">
+          <div class="row">
+            <a href="https://signin.ebay.com/ws/eBayISAPI.dll?SellItem"> <button class="btn waves-effect waves-light" type="submit" id="option1">  Log in via eBay
+            </button> </a>
+          </div>
+          <div class="row">
+            <a href="https://www.paypal.com/signin?country.x=GB&locale.x=en_GB"><button class="btn waves-effect waves-light" type="submit" id="option2">Log in via PayPal
+            </button> </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
