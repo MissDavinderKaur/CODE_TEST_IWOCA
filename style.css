@@ -14,3 +14,7 @@ body {
 #login {
   float: right;
 }
+
+footer > ul > li {
+  display: inline-block;
+}
