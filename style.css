@@ -1,3 +1,16 @@
 body {
   background: grey;
 }
+
+.container {
+  margin-top: 25px;
+}
+
+#logo {
+  height:100px;
+  width: 200px;
+}
+
+#login {
+  float: right;
+}
